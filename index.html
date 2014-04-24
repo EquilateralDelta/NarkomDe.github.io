@@ -1,69 +1,99 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Проекты</title>
-  <style type="text/css">
-   .main{
-    width: 600px; 
-    background: #eee;  
-    position: fixed;
-    left: 50%;
-    top: 75px;
-    margin-left: -300px;	
-    border: solid 1px black; 
-    background-image: url("bg1.jpg");
-    padding: 3px;
-   }
-   .content { 
-    background: #ccc;
-    margin: 2px;
-    padding: 7px;
-    border: solid 1px black; 
-    background-image: url("bg2.jpg");
-   }
-   .lowerBlock{
-    border: solid 1px black;    
-    margin: -8px;
-    margin-top: 4px;
-    padding: 7px;	
-   }
-  </style> 
- </head>
+  <head>
+    <title>Title</title>
+  
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script type="text/javascript" src='js/jquery-1.11.0.min.js'></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/colorbrewer.v1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/trianglify.min.js"></script>
 
- <body background = "bg3.jpg">
-  <div class="main" align="center">
-   <H1>Проекты</H1>  
-   <div class="content" align="center">
-    <b>
-   	 Balls Duel (Unity3D)
-   	</b> 
-    <div class="lowerBlock" align="left">
-   	 Небольшая игра, смысл которой — столкнуть противника за пределы шахматной доски. Для двоих игроков за одним компьютером. Управление: WASD, стрелки – движение, правый и левый Shift – ускорение для каждого игрока соответственно. 	
-     <br /><a href="Balls.html">Онлайн(требуется Unity Web Player)</a>
-     <br /><a href="Code.rar">Binary (Windows)</a>
+    <script language="javascript" type="text/javascript" src="js/script.js"></script>
+
+    <meta charset='utf-8' />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+  </head>
+  <body>
+    <div class='wrapper'>
+      <header><h1>Projects</h1></header>
+      <section class='main'>
+<!-- 
+        <article>
+          <div class='button'>
+            <div class='headline'>
+                заголовок
+            </div>
+            <div class='short content'>
+                описание и <a href='#'>ссылочка</a> на скачивание
+            </div>
+          </div>
+          <div class='content long'>
+            <p>
+              много текста
+            </p>
+          </div>
+        </article> -->
+
+        <article>
+          <div class='button'>
+            <div class='headline'>
+                Balls Duel
+            </div>
+            <div class='short content'>
+                Unity3D game
+            </div>
+          </div>
+          <div class='content long'>
+            <p>
+              Небольшая игра, смысл которой — столкнуть противника за пределы шахматной доски. Для двоих игроков за одним компьютером. Управление: WASD, стрелки – движение, правый и левый Shift – ускорение для каждого игрока соответственно.  
+              <br /><a href="Balls.html">Онлайн(требуется Unity Web Player)</a>
+              <br /><a href="Code.rar">Binary (Windows)</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <div class='button'>
+            <div class='headline'>
+                Fireworks
+            </div>
+            <div class='short content'>
+                C# + XNA eye-catcher
+            </div>
+          </div>
+          <div class='content long'>
+            <p>
+             Заставка, состоящая из взлетающих и взрывающихся фейерверков. Присутствует музыка на заднем фоне и элементы новогоднего настроения. Выход — любая клавиша клавиатуры. Для запуска требуется библиотека XNA Framework Redistributable 4.0 Refresh.
+             <br /><a href="FireworksBuild.rar">Binary (Windows)</a>
+             <br /><a href="FireworksCode.rar">Исходный код</a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <div class='button'>
+            <div class='headline'>
+                Tetris
+            </div>
+            <div class='short content'>
+                C# + XNA classic game
+            </div>
+          </div>
+          <div class='content long'>
+            <p>
+             Тетрис с разными уровнями сложности и таблицей рекордов. Для запуска требуется библиотека XNA Framework Redistributable 4.0 Refresh.
+             <br /><a href="TetrisBuild.rar">Binary (Windows)</a>
+             <br /><a href="TetrisCode.rar">Исходный код</a>
+            </p>
+          </div>
+        </article>
+
+
+      </section>
+      <footer></footer>
     </div>
-   </div>
-   <div class="content" align="center">
-   	<b>
-   	 Fireworks (C# + XNA)
-   	</b> 
-   	<div class="lowerBlock" align="left">
-   	 Заставка, состоящая из взлетающих и взрывающихся фейерверков. Присутствует музыка на заднем фоне и элементы новогоднего настроения. Выход — любая клавиша клавиатуры. Для запуска требуется библиотека XNA Framework Redistributable 4.0 Refresh.
-     <br /><a href="FireworksBuild.rar">Binary (Windows)</a>
-     <br /><a href="FireworksCode.rar">Исходный код</a>
-    </div>
-   </div>
-   <div class="content" align="center">
-   	<b>
-   	 Tetris (C# + XNA)
-   	</b> 
-   	<div class="lowerBlock" align="left">
-   	 Тетрис с разными уровнями сложности и таблицей рекордов. Для запуска требуется библиотека XNA Framework Redistributable 4.0 Refresh.
-     <br /><a href="TetrisBuild.rar">Binary (Windows)</a>
-     <br /><a href="TetrisCode.rar">Исходный код</a>
-    </div>
-   </div>
-  </div>
- </body>
+  </body>
+
 </html>
