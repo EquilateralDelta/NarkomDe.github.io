@@ -1,12 +1,12 @@
 $(function(){
-  // var t = new Trianglify({
-  //   noiseIntensity: 0,
-  //   cellsize: 90,
-  //   x_gradient: colorbrewer.YlGnBu[20], 
-  //   y_gradient: colorbrewer.RdPu[20]
-  // });
-  // var pattern = t.generate(2000, 2000);
-  // document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
+  var t = new Trianglify({
+    noiseIntensity: 0,
+    cellsize: 90,
+    x_gradient: colorbrewer.YlGnBu[20], 
+    y_gradient: colorbrewer.RdPu[20]
+  });
+  var pattern = t.generate(2000, 2000);
+  document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
   
   $('.content.long').hide();
 
